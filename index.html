@@ -10,6 +10,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+	<link rel="manifest" href="./js/site.json">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
@@ -18,8 +19,8 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-example2">
-		<a class="navbar-brand" href="#top">Rider Jensen</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand">Rider Jensen</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -50,17 +51,14 @@
 		</div>
 	</nav>
 
-	<!-- Main jumbotron for a primary marketing message or call to action -->
-	<a id="top"></a>
+	<!-- Main jumbotron -->
 	<div class="jumbotron">
 		<div class="jumbo-opacity"></div>
-		<div class="container">
-			<div class="row">
-				<h1 class="display-4 text-white">Web Development<br /><span class="secondary-color">with a human
-						touch</span>.</h1>
-				<p class="lead text-white width-100">Dont waste time creating a website that wont accomplish your goals.
-				</p>
-				<p class="width-100 text-white">Custom made web solutions built to increase productivity and revenue.</p>
+		<div class="container mt-5">
+			<div class="row mt-2">
+				<h1 class="display-4 text-white">Web Development<br /><span class="secondary-color">with a human touch</span>.</h1>
+				<p class="lead text-white">Dont waste time creating a website that wont accomplish your goals.</p>
+				<p class="w-100 text-white">Custom made web solutions built to increase productivity and revenue.</p>
 				<a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Me</a>
 			</div>
 		</div>
@@ -70,78 +68,62 @@
 	<div style="position: relative;">
 		<canvas class="background"></canvas>
 
-		<!-- Our Team -->
-		<div class="container padding-top-50 padding-bottom-50" id="about">
-			<div class="row padding-top-50">
-				<div class="col-md-12 col-lg-6 offset-lg-3">
-					<div class="card staff">
-						<div class="cover-image rounded-circle">
-							<img src="./img/rider.jpg" />
-						</div>
-						<div class="card-body">
-							<h5 class="card-title">Rider Jensen</h5>
-							<p class="title">Web Developer</p>
-							<p class="card-text">Highly ambitious problem solver with hands on industry experience.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container padding-top-30 padding-bottom-30">
+		<div class="container pt-3 pb-3" id="about">
 			<div class="row">
 				<div class="col-md-10 offset-md-1 col-sm-12">
-					<h2 class="text-center padding-bottom-20">About Me</h2>
+					<img class="d-block mx-auto cover-image rounded-circle" alt="A picture of Rider Jensen" src="./img/rider.jpg" />
+					<h2 class="text-center pb-2">Rider Jensen</h2>
+					<p class="mb-3 h5 text-center">Web Developer</p>
 					<p>I am a web application developer, I am very interested in the frontend experience for users as well as machine learning and where it can take us. I fell into web development after completing an associate's degree in History and Political Science. I found that not only was I technically minded but many of my past experiences had left me very customer service oriented. Helping people is something that I have always loved to do and web development has allowed me to fulfill this purpose in my life while working with technologies that I love.</p>
 					<p>Besides coding, I enjoy cooking, concerts, video games, and learning. At any given moment you could find me watching an online course, bingeing a Netflix series, or listening to Lofi music while I work on a side project.</p>
 				</div>
 			</div>
-			<!--End Container -->
 		</div>
 
-		<div class="container padding-top-20 padding-bottom-20" id="projects">
-			<h2 class="text-center padding-bottom-20">Projects</h2>
-			<p class="text-center">This is just a small showcase of the projects I have worked on. View my <a href="https://github.com/riderjensen" target="_blank">Github</a> to see all my projects and source code.</p>
+		<div class="container pt-2 pb-2" id="projects">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-sm-12">
+					<h2 class="text-center pb-2">Projects</h2>
+					<p class="text-center">This is just a small showcase of the projects I have worked on. View my <a href="https://github.com/riderjensen" target="_blank">Github</a> to see all my projects and source code.</p>
+				</div>
+			</div>
 		</div>
-		<div class="container padding-top-20 padding-bottom-20">
-			<div class="row padding-bottom-20">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<div class="card" style="width: 100%;">
+		<div class="container pt-2 pb-2">
+			<div class="row pb-3">
+				<div class="col-md-8 offset-md-2">
+					<div class="card w-100">
 						<img class="card-img-top" src="./img/exp4.png" alt="Screenshot of the Inc Fast Now homescreen">
 						<div class="card-body">
-						  <h5 class="card-title text-center"><a href="https://incfastnow.com" target="_blank">Inc Fast Now</a></h5>
-						  <p class="card-text">Inc Fast Now is a client project that I was contracted to make. The frontend is built with React.js while the backend is a Node.js RESTful API. The code includes cart management, user validation, and payment processing. It also included the creation of a CRM, mail server, and CMS website. I handled the whole project from start to finish including server set up and management. Email or call me for access to review the source code.</p>
+						  <h5 class="m-0 text-center"><a href="https://incfastnow.com" target="_blank">Inc Fast Now</a></h5>
+						  <p class="card-text">Inc Fast Now is a client project that I was contracted to make. The frontend is built with React.js while the backend is a Node.js RESTful API. The code includes cart management, user validation, and payment processing. It also included the creation of a CRM, mail server, and CMS website. I handled the whole project from start to finish including server set up and management. <a href="#contact">Contact</a> me for more information on the source code.</p>
 						</div>
 					  </div>
 				</div>
-				<div class="col-md-2"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 padding-bottom-20">
-					<div class="card" style="width: 100%;">
+			<div class="row pb-3">
+				<div class="col-md-4 pb-3">
+					<div class="card w-100">
 						<img class="card-img-top" src="./img/exp1.png" alt="Screenshot of the Project Arcanite homescreen">
 						<div class="card-body">
-						  <h5 class="card-title text-center"><a href="https://silly-minsky-690c3b.netlify.com" target="_blank">Project Arcanite</a></h5>
+						  <h5 class="m-0 text-center"><a href="https://silly-minsky-690c3b.netlify.com" target="_blank">Project Arcanite</a></h5>
 						  <p class="card-text">Project Arcanite is a posting platform similar to Yik-Yak with a few differences. The frontend is built with React.js and the backend is a restful Node.js application. It includes handwritten authentication as well as JWT verification. <a href="https://github.com/riderjensen/arcanite-front" target="_blank">Source</a></p>
 						</div>
 					  </div>
 				</div>
-				<div class="col-md-4 padding-bottom-20">
-					<div class="card" style="width: 100%;">
+				<div class="col-md-4 pb-3">
+					<div class="card w-100">
 						<img class="card-img-top" src="./img/exp2.png" alt="Screenshot of the admin area for the MVC of the URL shortner">
 						<div class="card-body">
-						  <h5 class="card-title text-center"><a href="https://easy-shortner.herokuapp.com" target="_blank">URL Shortner</a></h5>
+						  <h5 class="m-0 text-center"><a href="https://easy-shortner.herokuapp.com" target="_blank">URL Shortner</a></h5>
 						  <p class="card-text">This URL shortner was built as a RESTful api with an optional MVC, made in Node.js. Its totally open for people to download and use themselves. It's really easy to add in your own middleware and is still being updated with new technologies. <a href="https://github.com/riderjensen/nodejs-url-shortner" target="_blank">Source</a></p>
 						</div>
 					  </div>
 				</div>
-				<div class="col-md-4 padding-bottom-20">
-					<div class="card" style="width: 100%;">
+				<div class="col-md-4 pb-3">
+					<div class="card w-100">
 						<img class="card-img-top" src="./img//exp3.png" alt="Screenshot of the application page">
 						<div class="card-body">
-						  <h5 class="card-title text-center"><a href="https://play.google.com/store/apps/details?id=com.riderjensen.leanlist" target="_blank">Lean List</a></h5>
+						  <h5 class="m-0 text-center"><a href="https://play.google.com/store/apps/details?id=com.riderjensen.leanlist" target="_blank">Lean List</a></h5>
 						  <p class="card-text">Lean List is built with Dart and Flutter, it's a native mobile application that allows for multiple people to create, keep, and edit lists with other people. Because this app's backend is located on Firebase, it is cross platform. <a href="https://github.com/riderjensen/leanlist" target="_blank">Source</a></p>
 						</div>
 					  </div>
@@ -149,15 +131,16 @@
 			</div>
 		</div>
 	</div>
-	<div class="container padding-bottom-50" id="contact">
-		<div class="row text-center padding-bottom-50 padding-bottom-50">
+
+	<div class="container pb-5" id="contact">
+		<div class="row text-center pb-5">
 			<div class="col-12">
-				<h2 class="test-center padding-bottom-20">Contact Me</h2>
+				<h2 class="test-center pb-2">Contact Me</h2>
 				<p class="text-center">Interested in hiring me? Fill out my form or contact me through <a target="_blank" href="https://www.linkedin.com/in/rider-jensen/">LinkedIn</a>.</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 offset-md-2 col-12">
+			<div class="col-lg-8 offset-lg-2 col-12">
 				<form action="https://formspree.io/riderjensen@gmail.com" method="POST">
 					<div class="form-group">
 						<input type="text" required class="form-control" name="name" placeholder="Full name*">
@@ -181,7 +164,7 @@
 	</div>
 
 	<div class="container-fluid">
-		<footer>
+		<footer class="pt-2 pb-2">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-4 text-center">

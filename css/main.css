@@ -3,38 +3,6 @@ html {
 }
 
 /* ======= Start General Styles ======= */
-.text-center {
-    text-align: center;
-}
-
-.margin-auto {
-    margin: auto;
-}
-
-.padding-top-50 {
-    padding-top: 50px;
-}
-
-.padding-bottom-50 {
-    padding-bottom: 50px;
-}
-
-.padding-top-20 {
-    padding-top: 20px;
-}
-
-.padding-bottom-20 {
-    padding-bottom: 20px;
-}
-
-.width-100 {
-    width: 100%;
-}
-
-.media i {
-    font-size: 30px;
-    margin: 10px;
-}
 
 .secondary-color {
     color: 	hsl(17, 100%, 50%);
@@ -43,11 +11,6 @@ html {
 .highlight-color {
     color: 	hsl(200, 15%, 24%);
 }
-
-.text-white {
-    color: #fff;
-}
-
 /* ======= End General Styles ======= */
 
 
@@ -61,7 +24,7 @@ html {
 }
 
 .btn-primary {
-    background-color: 	hsl(17, 100%, 50%);
+    background-color: hsl(17, 100%, 50%);
     padding: 10px 20px;
     border: 2px solid rgba(0, 0, 0, 0.0);
     color: #fff;
@@ -103,11 +66,6 @@ html {
 
 .jumbotron .container * {
     z-index: 5;
-    margin-top: 20px;
-}
-
-.jumbotron .container {
-    margin-top: 50px;
 }
 
 .lead {
@@ -117,62 +75,9 @@ html {
 /* ======= End Header ====== */
 
 
-/* ====== Start Card Styes ====== */
-.card-body .title {
-    text-align: center;
-    font-size: 14px;
-
-}
-
-.card-title {
-    text-align: center;
-    margin: 0;
-
-}
-
-/* ====== End Card Styes ====== */
-
-
-/* ====== Start Main Selling Points ====== */
-
-.main-icon i {
-    font-size: 25px;
-}
-
-
-
-/* ======= Start Staff Cards ======= */
-
-.card.staff {
-    padding-top: 60px;
-    margin-top: 90px;
-    padding-bottom: 20px;
-    height: auto;
-}
-
-.card.staff .cover-image {
-    position: absolute;
-    top: -70px;
-    left: 0;
-    right: 0;
-    width: 100px;
-    margin: auto;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.card.staff .cover-image img {
-    width: 100%;
-}
-
-.card.staff .connect {
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
+.cover-image {
+    max-height: 150px;
+    max-width: 150px;
 }
 
 .background {
@@ -183,22 +88,9 @@ html {
     left: 0;
 }
 
-/* ======= End Staff Cards ======= */
-
-/* ====== Start Footer ====== */
-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/* ====== End Footer ====== */
-
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /* ======= Start Header ====== */
-
-
 
     .jumbotron .container {
         margin-top: 15vh;
@@ -209,14 +101,5 @@ footer {
     }
 
     /* ======= End Header ====== */
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .card.staff {
-        margin-top: 0px;
-        height: 100%;
-    }
 
 }
