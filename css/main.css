@@ -44,7 +44,7 @@ html {
     border-top: 4px solid hsl(17, 100%, 50%);
     position: relative;
     height: auto;
-    background-image: url('../img/main-header.jpg');
+    background-image: url('../img/main-header.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
